@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  summary: MyString
+  details: MyText
+  order: 1
+  promoted: false
+  due_date: 2024-08-04 18:01:44
+
+two:
+  summary: MyString
+  details: MyText
+  order: 1
+  promoted: false
+  due_date: 2024-08-04 18:01:44

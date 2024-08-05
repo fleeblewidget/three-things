@@ -1,0 +1,23 @@
+<%= form_with model: task do |form| %>
+  <div>
+    <%= form.label :summary %>
+    <%= form.text_field :summary %>
+    <% @task.errors.full_messages_for(:summary).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :details %>
+    <%= form.text_area :details %>
+  </div>
+
+  <div>
+    <%= form.label :due_date %>
+    <%= form.date_field :due_date %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

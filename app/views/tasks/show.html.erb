@@ -1,0 +1,10 @@
+<h1><%= @task.summary %></h1>
+<p><%= @task.details %></p>
+<p>Task number <%= @task.order %>, created <%= @task.created_at %>, due <%= @task.due_date %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_task_path(@task) %></li>
+  <li><%= link_to "Delete", task_path(@task), data: {
+	    turbo_method: :delete,
+	    turbo_confirm: "Are you sure? Only delete tasks added in error, otherwise use 'Complete'"
+	  } %></li>
